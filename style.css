@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+  border: box-sizing;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Topbar{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #3DB166;
+  z-index: 999;
+  top:0%;
+}
+
+img{
+  position: relative;
+  align-self: center;
+  margin-top: 13px;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1.headick{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 4rem;
+    text-align: center;
+    color: #3DB166;
+    margin-top: 12%;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: 'Poppins', 'sans-serif';
+    border: 1px solid rgb(76, 196, 20);
+    background-color: #37b864;
+    opacity: 0.9;
+    position: relative;
+    z-index: 0;
+ }
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+}
+  
+ 
+form input[type="char"],
+form input[type="charint"],
+form input[type="char"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  
+}
+
+
+form input[type="charintflo"]{
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+form textarea{
+    width: 100%;
+    height: 150px;
+}
+
