@@ -6,51 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment Scheduling</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 <body>
-
-<h1 class="headick">University Appointments</h1>
+  
          
-    <div id="response" class="container">
-        <div class="Topbar">
-            <a href="#"> <img src="logo.png" alt="A description of the image"></a> 
-        </div>
-
-        <div class="form">
-            <form action="result.php" method="POST">
-              <label for="name">Full Name:</label><br>
-              <input type="char" id="fullname" name="textbox_name"<br>
-              <label for="email">Email:</label><br>
-              <input type="charint" id="email" name="mail">
-                <label for="date">Date:</label>
-                <select name="date">
-              <option value="">-- Select a date --</option>
-              <option value="2022-01-06">Jan 6, 2022</option>
-              <option value="2022-01-07">Jan 7, 2022</option>
-              <!-- Add more options for other dates -->
-                </select><br>
-                <label for="time">Time:</label>
-                <select name="time">
-              <option value="">-- Select a time --</option>
-              <option value="09:00">9:00 AM</option>
-              <option value="10:00">10:00 AM</option>
-              <!-- Add more options for other times -->
-                </select><br>
-              <button name="submit"id="submit "type="submit" onclick="verifyEmail()"> Send </button>
-            </form>
+  <div id="response" class="container">
+    <div class="Topbar">
+      <a href="index.php"> <img src="logo.png" alt="A description of the image" id="logo"></a> 
     </div>
+    <h1 class="headick">Appointment Form</h1>
+    <div class="form">
+      <form onsubmit="return showPopup()" action="database.php" method="POST">
+        <label for="name">Full Name:</label><br>
+        <input type="char" id="fullname" name="textbox_name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="charint" id="email" name="mail" required>
 
+        <label for="Day">Day:</label>
+          <select name="Date" required>
+            <option value="">-- Select a Day --</option>
+            <option value="January 5, 2023">January 5, 2023</option>
+            <option value="January 6, 2023">January 6, 2023</option>
+            <option value="January 7, 2023">January 7, 2023</option>
+          </select>
+        <label for="Time">Time:</label>
+          <select name="Time" required>
+            <option value="">-- Select a Time--</option>
+            <option value="8:00">8:00</option>
+            <option value="11:00">11:00</option>
+            <option value="14:00">14:00</option>
+          </select>
+          <br><br><br>
+      <button name="submit"id="submit "type="submit" onclick="verifyEmail()"> Send </button>
+      </form>
+    </div>
+  </div>
+  <script>
+    function showPopup() {
+        alert("Thank you for submitting your response!");
+        location.reload();
+        return;
+    }
+  </script>
 </body>
-
-
-
-
-
-
-
-
-
 </html>
-
