@@ -1,39 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Scheduling</title>
-    <link rel="stylesheet" href="style.css">
-
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Scheduling</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="Topbar">
-            <a href="#"> <img src="logo.png" alt="A description of the image"></a> 
-        </div>
-        <div class="header-text">        
-            <h1 class="headick">University Appointments</h1>
-        </div>    
+  <!-- Add the navbar -->
+  <div class="navbar">
+    <img src="logo.png" alt="Logo">
+  </div>
 
-        <div class="form">
-            <form>
-              <label for="name">Full Name:</label><br>
-              <input type="char" id="fullname" name="name"><br>
-              <label for="email">Email:</label><br>
-              <input type="charint" id="email" name="mail">
-              <label for="subject">Subject:</label><br>
-              <input type="char" id="subject" name="sub">
-              <label for="charint">Message:</label><br>
-              <textarea></textarea>
-            </form>
-        </div>
+  <!-- Add the header text -->
+  <h2 class="header-text">Appointment Schedule</h2>
 
-    
-    </div>
+  <!-- Add the green box -->
+  <div class="green-box">
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <label for="Day">Day:</label>
+    <select name="Date" required>
+      <option value="">-- Select a Day --</option>
+      <option value="January 5, 2023">January 5, 2023</option>
+      <option value="January 6, 2023">January 6, 2023</option>
+      <option value="January 7, 2023">January 7, 2023</option>
+    </select>
+    <label for="Time">Time:</label>
+    <select name="Time" required>
+      <option value="">-- Select a Time--</option>
+      <option value="8:00">8:00</option>
+      <option value="11:00">11:00</option>
+      <option value="14:00">14:00</option>
+    </select>
+    <button name="submit"id="submit "type="submit" onclick="verifyEmail()"> Send </button>
+  </div>
 
-    <br><br>
 </body>
 </html>
