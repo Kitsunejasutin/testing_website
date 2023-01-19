@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +10,20 @@
     <title>Appointment Scheduling</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="bundled.js"></script>
+    <script>
+if (bowser.name === 'Internet Explorer' && bowser.version < 11) {
+    alert('Your browser is outdated. Please update to a newer version of Internet Explorer.');
+    location.reload();
+  } else if (bowser.name === 'Firefox' && bowser.version < 68) {
+    alert('Your browser is outdated. Please update to a newer version of Firefox.');
+    location.reload();
+  } else if (bowser.name === 'Chrome' && bowser.version < 85) {
+    alert('Your browser is outdated. Please update to a newer version of Chrome.');
+    location.reload();
+  }
+
+    </script>
     <title>CALENDAR</title>
     
 </head>
